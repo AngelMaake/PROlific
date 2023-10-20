@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PROlific</title>
+</head>
+<body>
+    <header>
+        <img src="/home/wethinkcode/Prolific Website/FINAL LOQ DOWN Logo3 (1).jpg" alt="Header Image">
+    </header>
+    <div class="content-container">
+        <button id="addPlayerButton">Add Player</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Nickname</th>
+                    <th>Date Of Birth</th>
+                    <th>Height</th>
+                    <th>Club/Team</th>
+                    <th>Nationality</th>
+                    <th>More...</th>
+                </tr>
+            </thead>
+            <tbody id="playersTableBody">
+            </tbody>
+        </table>
+        <div id="fullProfile" style="display: none;"></div>
+        <div id="photos" style="display: none;"></div>
+    </div>
+
+    <div id="addPlayerModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Add a New Player</h2>
+            <form id="newPlayerForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="newPlayerName">Name:</label>
+                    <input type="text" id="newPlayerName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerSurname">Surname:</label>
+                    <input type="text" id="newPlayerSurname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerNickname">Nickname:</label>
+                    <input type="text" id="newPlayerNickname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerDateOfBirth">Date of Birth:</label>
+                    <input type="text" id="newPlayerDateOfBirth" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerNationality">Nationality:</label>
+                    <input type="text" id="newPlayerNationality" required>
+                </div>
+
+                <div class "form-group">
+                    <label for="newPlayerLoqdownTeam">Loqdown Team:</label>
+                    <input type="text" id="newPlayerLoqdownTeam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerEvent">Event:</label>
+                    <input type="text" id="newPlayerEvent" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerResidentialDistrict">Residential District:</label>
+                    <input type="text" id="newPlayerResidentialDistrict" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerAffiliation">Affiliation:</label>
+                    <input type="text" id="newPlayerAffiliation" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerId">ID/Passport Number:</label>
+                    <input type="text" id="newPlayerId" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerPhoneNumber">Phone Number:</label>
+                    <input type="text" id="newPlayerPhoneNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerPosition">Position:</label>
+                    <input type="text" id="newPlayerPosition" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerHeight">Height:</label>
+                    <input type="text" id="newPlayerHeight" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPlayerWingspan">Wingspan:</label>
+                    <input type="text" id="newPlayerWingspan" required>
+                </div>
+
+                <label for="newPlayerImage">Image:</label>
+                <input type="file" id="newPlayerImage" accept="image/*" required>
+
+                <button type="button" id="submitNewPlayer">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="addPhotoModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="closePhotoModal">&times;</span>
+            <h2>Add Photo</h2>
+            <form id="newPhotoForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="newPhoto">Photo:</label>
+                    <input type="file" id="newPhoto" accept="image/*" required>
+                </div>
+                <button type="button" id="submitNewPhoto">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
